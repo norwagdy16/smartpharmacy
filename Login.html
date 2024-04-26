@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/fav.png">
+  <link rel="stylesheet" href="css/responsive.css">
+  <title>Register</title>
+  <style>
+    body {
+      background-image:url(bg.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: 'Arial', sans-serif;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 16px 3px rgba(0, 0, 0, 0.1);
+      width: 600px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #045c85;
+    }
+
+    label {
+      font-weight: bold;
+      color: #014361;
+      float: left;
+      margin-left: 50px;
+    }
+    
+
+    input , textarea{
+      width:80%;
+      padding: 10px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #045c85;
+      color: #fff;
+      padding: 15px 50px;
+      border: none;
+      border-radius: 8px;
+      font-size: 17px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #45a06f;
+    }
+    .login-link,
+    .back-link {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    .login-link a,
+    .back-link a {
+      text-decoration: none;
+      color: #45a06f;
+    }
+
+    .login-link a:hover,
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+
+    #userTypeLabel {
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    #userType {
+      display: none;
+    }
+    .radiostylee {
+      display: inline;
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 12px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .radiostylee span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 20px;
+      width: 20px;
+      background-color: #eee;
+      border-radius: 50%;
+      border: 1px solid #ccc;
+    }
+
+    .radiostylee:hover span {
+      background-color: #ccc;
+    }
+    .radiostylee input:checked ~ span {
+      background-color: #0d7da5;
+    }
+
+    .radiostylee span:after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: white;
+      display: none;
+    }
+
+    .radiostylee input:checked ~ span:after {
+      display: inline;
+    }
+    .radiostylee input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(103, 103, 103, 0.4);
+    }
+
+    .modal-content {
+      background-color: #fefefe;
+      margin: 15% auto;
+      padding: 30px;
+      border: 1px solid #888;
+      border-radius: 4px;
+      width: 100%;
+      max-width: 400px; 
+      height: auto;   
+    }
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+ 
+<body>
+  <div class="container">
+    <h2 style="font-family: cursive;">Welcome to Smart pharmacy !</h2>
+    <label id="userTypeLabel"></label>
+    <label for="patientRadio" class="radiostylee">Patient
+        <input type="radio" id="patientRadio" name="userType" value="patient" checked onchange="toggleForm()">
+        <span class="checkmark"></span>
+    </label>
+    <label for="pharmacyRadio" class="radiostylee">Pharmacy
+        <input type="radio" id="pharmacyRadio" name="userType" value="pharmacy" onchange="toggleForm()">
+        <span class="checkmark"></span>
+    </label>
+    <label for="doctorRadio" class="radiostylee">Doctor
+        <input type="radio" id="doctorRadio" name="userType" value="doctor" onchange="toggleForm()">
+        <span class="checkmark"></span>
+    </label>
+
+    <form id="patientForm">
+      <input type="text" id="patientName" name="patientName" placeholder="Username" required>
+      <input type="email" id="patientEmail" name="patientEmail" placeholder="Email" required> 
+      <input type="password" id="patientPassword" name="patientPassword" placeholder="Password" required>
+      <select id="patientGovernorate" name="patientGovernorate" required style="width: 40%; padding: 10px; margin-bottom: 10px;box-sizing: border-box;border: 1px solid #ccc;border-radius: 4px;">
+        <option value="" selected disabled>Country</option>
+        <option value="governorate1">Damietta</option>
+        <option value="governorate2">Cairo</option>
+      </select>
+      <select id="patientCity" name="patientCity" required style="width: 40%; padding: 10px; margin-bottom: 10px;box-sizing: border-box;border: 1px solid #ccc;border-radius: 4px;">
+        <option value="" selected disabled>City</option>
+        <option value="city1">New Damietta</option>
+      </select>
+      <input id="patientLocation" name="patientLocation" placeholder="Add your address" required >
+      <input type="tel" id="patientPhone" name="patientPhone" placeholder="Phone Number" required>
+      <button type="submit" id="signUp">Sign Up</button>
+    </form>    
+
+    <form id="pharmacyForm" style="display: none;">
+      <input type="text" id="pharmacyName" name="pharmacyName" placeholder="Pharmacy Name" required>
+      <input type="email" id="pharmacyEmail" name="pharmacyEmail" placeholder="Email" required> 
+      <input type="password" id="pharmacyPassword" name="pharmacyPassword" placeholder="Password" required>
+      <input type="tel" id="pharmacyPhone" name="pharmacyPhone" placeholder="Phone Number" required>
+      <select id="pharmacyGovernorate" name="pharmacyGovernorate" required style="width: 40%; padding: 10px; margin-bottom: 10px;box-sizing: border-box;border: 1px solid #ccc;border-radius: 4px;">
+        <option value="" selected disabled>Country</option>
+        <option value="governorate1">Damietta</option>
+        <option value="governorate2">Cairo</option>
+      </select>
+      <select id="pharmacyCity" name="pharmacyCity" required style="width: 40%; padding: 10px; margin-bottom: 10px;box-sizing: border-box;border: 1px solid #ccc;border-radius: 4px;">
+        <option value="" selected disabled>City</option>
+        <option value="city1">New Damietta</option>
+      </select>
+      <textarea id="pharmacyLocation" name="pharmacyLocation" placeholder="Location" rows="1" required ></textarea>
+      <button type="submit" id="signUpPH">Sign Up</button>
+    </form>
+
+ 
+<form id="doctorForm" style="display: none;">
+      <input type="text" id="doctorName" name="doctorName" placeholder="Username" required>
+      <input type="email" id="doctorEmail" name="doctorEmail" placeholder="Email" required> 
+      <input type="password" id="doctorPassword" name="doctorPassword" placeholder="Password" required>
+      <select id="doctorGovernorate" name="doctorGovernorate" required style="width: 40%; padding: 10px; margin-bottom: 10px;box-sizing: border-box;border: 1px solid #ccc;border-radius: 4px;">
+        <option value="" selected disabled>Country</option>
+        <option value="governorate1">Damietta</option>
+        <option value="governorate2">Cairo</option>
+      </select>
+      <select id="doctorCity" name="doctorCity" required style="width: 40%; padding: 10px; margin-bottom: 10px;box-sizing: border-box;border: 1px solid #ccc;border-radius: 4px;">
+        <option value="" selected disabled>City</option>
+        <option value="city1">New Damietta</option>
+      </select>
+      <input id="doctorLocation" name="doctorLocation" placeholder="Add your address" required >
+      <input type="tel" id="doctorPhone" name="doctorPhone" placeholder="Phone Number" required>
+      <button type="submit" id="signUpDoc">Sign Up</button>
+    </form>
+
+    <div class="login-link">
+        <span style="color: #4e4e4e;">Already have an account ? </span><a href="#" style="font-weight: bold;"  onclick="toggleForm('login')">Log in</a>
+    </div>
+
+    <form id="loginForm" style="display: none;">
+      <br><br>
+      <input type="text" id="existingUsername" name="existingUsername" placeholder="Username" required>
+      <input type="password" id="existingPassword" name="existingPassword" placeholder="Password" required>
+      <div class="forget-password-link" style="text-align: center;">
+        <a href="#" onclick="showForgetPasswordModal()" style="text-decoration: none; font-size: 14px;">Forget your password?</a>
+      </div><br>
+      <button type="submit" id="signIn">Sign In</button>
+      <div class="back-link" style="display: none;">
+        <span style="color: #4e4e4e;">Don't have an account ? </span><a href="#" style="font-weight: bold;" onclick="toggleForm('back')">Sign Up</a>
+      </div>
+    </form>
+
+     <div id="forgetPasswordModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeForgetPasswordModal()">&times;</span>
+        <h2>Forget your password?</h2>
+        <p>Enter your email address to reset your password.</p>
+        <input type="email" id="resetEmail" name="resetEmail" placeholder="Email" required style="width: 80%; padding: 10px; margin-top: 30px;">
+        <button onclick="sendResetCode()" style="width: 50%; padding: 10px; background-color: #2c5577; color: white; border: none; border-radius: 4px; cursor: pointer;">Send Reset Code</button>
+      </div>
+    </div>
+
+  <div id="confirmResetCode" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeConfirmResetCodeModal()">&times;</span>
+    <h2>Confirm Reset Code</h2>
+    <p>Please enter the reset code you received in your email.</p>
+    <input type="text" id="resetCode" name="resetCode" placeholder="Reset Code" required style="width: 80%; padding: 10px; margin-top: 30px;">
+    <button onclick="verifyResetCode()" style="width: 50%; padding: 10px; background-color: #2c5577; color: white; border: none; border-radius: 4px; cursor: pointer;">Verify Code</button>
+  </div>
+</div>
+<div id="changePassword" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeChangePasswordModal()">&times;</span>
+    <h2>Change Password</h2>
+    <p>Please enter your new password.</p>
+    <input type="password" id="newPassword" name="newPassword" placeholder="New Password" required style="width: 80%; padding: 10px; margin-top: 30px;">
+    <button onclick="changePassword()" style="width: 50%; padding: 10px; background-color: #2c5577; color: white; border: none; border-radius: 4px; cursor: pointer;">Change Password</button>
+  </div>
+</div>
+
+
+</div>
+  
+  <script>
+function toggleForm(action) {
+  var patientForm = document.getElementById("patientForm");
+  var pharmacyForm = document.getElementById("pharmacyForm");
+  var doctorForm = document.getElementById("doctorForm");
+  var loginForm = document.getElementById("loginForm");
+  var loginLink = document.querySelector(".login-link");
+  var backLink = document.querySelector(".back-link");
+  var patientLabel = document.querySelector('label[for="patientRadio"]');
+  var pharmacyLabel = document.querySelector('label[for="pharmacyRadio"]');
+  var doctorLabel = document.querySelector('label[for="doctorRadio"]');
+  var patientRadio = document.getElementById("patientRadio");
+  var pharmacyRadio = document.getElementById("pharmacyRadio");
+  var doctorRadio = document.getElementById("doctorRadio");
+
+  if (action === "login") {
+    patientForm.style.display = "none";
+    pharmacyForm.style.display = "none";
+    doctorForm.style.display = "none";
+    loginForm.style.display = "block";
+    loginLink.style.display = "none";
+    backLink.style.display = "block";
+    patientLabel.style.display = "none";
+    pharmacyLabel.style.display = "none";
+    doctorLabel.style.display = "none";
+  } else if (action === "back") {
+    patientForm.style.display = "block";
+    pharmacyForm.style.display = "none";
+    doctorForm.style.display = "none";
+    loginForm.style.display = "none";
+    loginLink.style.display = "block";
+    backLink.style.display = "none";
+    patientLabel.style.display = "block";
+    pharmacyLabel.style.display = "block";
+    doctorLabel.style.display = "block";
+  } else {
+    patientForm.style.display = patientRadio.checked ? "block" : "none";
+    pharmacyForm.style.display = pharmacyRadio.checked ? "block" : "none";
+    doctorForm.style.display = doctorRadio.checked ? "block" : "none";
+    loginForm.style.display = "none";
+    loginLink.style.display = "block";
+    backLink.style.display = "none";
+    patientLabel.style.display = "block";
+    pharmacyLabel.style.display = "block";
+    doctorLabel.style.display = "block";
+  }
+}
+
+function showForgetPasswordModal() {
+  document.getElementById("forgetPasswordModal").style.display = "block";
+}
+function closeForgetPasswordModal() {
+  document.getElementById("forgetPasswordModal").style.display = "none";
+}
+function sendResetCode() {
+  var email = document.getElementById("resetEmail").value;
+  alert("Reset code has been sent to your email: " + email);
+  closeForgetPasswordModal();
+  showConfirmResetCodeModal();
+}
+function showConfirmResetCodeModal() {
+  document.getElementById("confirmResetCode").style.display = "block";
+}
+function closeConfirmResetCodeModal() {
+  document.getElementById("confirmResetCode").style.display = "none";
+}
+function verifyResetCode() {
+  var resetCode = document.getElementById("resetCode").value;
+  closeConfirmResetCodeModal();
+  showChangePasswordModal();
+}
+function showChangePasswordModal() {
+  document.getElementById("changePassword").style.display = "block";
+}
+function closeChangePasswordModal() {
+  document.getElementById("changePassword").style.display = "none";
+}
+function changePassword() {
+  var newPassword = document.getElementById("newPassword").value;
+  alert("Password has been changed successfully.");
+  closechangePasswordModal();
+
+}
+  </script>
+  <script src="js/register.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>
