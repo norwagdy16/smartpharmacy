@@ -60,6 +60,7 @@ function displayCartItems() {
           </div>`;
     cartItemsContainer.appendChild(cartItem);
   });
+  updateTotals();
 
   // Call the function to set up event listeners for quantity inputs
   updateTotalOnQuantityChange();
