@@ -1,47 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="img/fav.png">
-	<title>Checkout</title>
-	<link rel="stylesheet" type="text/css" href="css/payment.css">
+  <title>Smart Pharmacy - Payment</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="img/fav.png">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    header {
+      background-color: #fff;
+      padding: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    header img {
+      height: 60px;
+      margin-left: 100px;
+    }
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+    h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      color: #555;
+    }
+    .form-group input {
+      width: calc(100% - 20px);
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    .form-group input:focus {
+      border-color: #007bff;
+    }
+    .form-row {
+      display: flex;
+      justify-content: space-between;
+    }
+    .form-row .form-group {
+      flex: 1;
+    }
+    .form-row .form-group:first-child {
+      margin-right: 10px;
+    }
+    .btnn{
+        text-align: center
+    }
+    .btn-submit {
+      background-color: #045c85;
+      color: #fff;
+      display: inline-block;
+      padding: 15px 55px;
+      font-size: 18px;
+      border: none;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      transition: background-color 0.3s ease;
+      border-radius: 10px;
+
+      cursor: pointer;
+    }
+    .btn-submit:hover {
+      background-color: #45a06f;
+    }
+  </style>
 </head>
 <body>
-<header>
-	<div class="container">
-		<div class="left">
-			<h3>BILLING ADDRESS</h3>
-			<form>
-				Full name:
-				<input type="text" name="" placeholder="Enter name">
-				Email:
-				<input type="text" name="" placeholder="Enter email">
-
-				Address:
-				<input type="text" name="" placeholder="Enter address">
-				
-				City:
-				<input type="text" name="" placeholder="Enter City">
-				<div id="zip">
-					<label>
-						Governorate:
-						<select>
-							<option>Choose Governorate..</option>
-							<option>Damitta</option>
-							<option>cairo</option>
-							<option>mansora</option>
-						</select>
-					</label>
-						<label style="margin-left: 129px;">
-						Zip code:
-						<input type="number" name="" placeholder="Zip code">
-					</label>
-				</div>
-			</form>
-			<input type="submit" name="" value=" Checkout">
-		</div>
-	</div>
-</header>
+  <header>
+    <img src="img/logo.png" alt="Smart Pharmacy Logo">
+  </header>
+  
+  <div class="container">
+    <h2>Please Complete the information!</h2>
+    <form action="/submit_payment" method="post">
+        <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" required>
+            </div>
+        </div>
+      <div class="form-group">
+        <label for="city">City</label>
+        <input type="text" id="city" name="city" placeholder="ex: New Damietta" required>
+      </div>
+      <div class="form-group">
+        <label for="address">Address</label>
+        <input type="text" id="address" name="address"  placeholder="neighborhood - city " required>
+      </div>
+      <div class="form-group">
+        <label for="StreetName">Street Name</label>
+        <input type="text" id="StreetName" name="Street Name" placeholder="ex: Elseady" required>
+      </div>
+      <div class="form-group">
+        <label for="BuildingNumber">Building Number</label>
+        <input type="text" id="BuildingNumber" name="BuildingNumber" placeholder="ex: 4 " required>
+      </div>
+      <div class="form-group">
+        <label for="ZipCode">Zip Code</label>
+        <input type="text" id="ZipCode" name="ZipCode" placeholder="ex: 1234" required>
+      </div>
+      <div class="btnn">
+        <button type="submit" class="btn-submit">Submit Payment</button>
+      </div>
+    </form>
+  </div>
 </body>
 </html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Pharmacy - Address</title>
+    <link rel="icon" href="img/fav.png">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        header {
+            background-color: #fff;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        header img {
+            height: 60px;
+            margin-left: 100px;
+        }
+        #map {
+            height: 500px;
+            width: 100%;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        .custom-button {
+            background-color: #045c85;
+            color: white;
+            font-size: 18px;
+            border-radius: 8px;
+            font-weight: bold;
+            border: none;
+            transition: all 0.3s ease;
+        }
+        .custom-button:active {
+            background-color: #045c85;
+            transform: translateY(2px);
+        }
+        .confirm-button {
+            margin-left: 7px;
+            width: 200px;
+            height: 55px;
+        }
+        .input-group .custom-button {
+            background-color: #45a06f;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            font-size: 16px;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 38px;
+        }
+        .input-group .form-control {
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="Smart Pharmacy Logo">
+    </header>
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2>Add New Address</h2>
+            <button class="custom-button confirm-button">Confirm Location</button>
+        </div>
+        <br>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Search for your location">
+            <div class="input-group-append">
+                <button class="custom-button" type="button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+        <div id="map"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <script>
+        function initMap() {
+            var cairo = {lat: 30.0444, lng: 31.2357};
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 10,
+                center: cairo
+            });
+            var marker = new google.maps.Marker({
+                position: cairo,
+                map: map
+            });
+        }
+    </script>
+</body>
+</html>
