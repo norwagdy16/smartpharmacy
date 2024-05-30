@@ -38,7 +38,7 @@
       font-weight: bold;
       color: #014361;
       float: left;
-      margin-left: 50px;
+      margin-left: 75px;
     }
     
 
@@ -193,10 +193,7 @@
         <input type="radio" id="pharmacyRadio" name="userType" value="pharmacy" onchange="toggleForm()">
         <span class="checkmark"></span>
     </label>
-    <label for="doctorRadio" class="radiostylee">Doctor
-        <input type="radio" id="doctorRadio" name="userType" value="doctor" onchange="toggleForm()">
-        <span class="checkmark"></span>
-    </label>
+    
 
     <form id="patientForm">
       <input type="text" id="patientName" name="patientName" placeholder="Username" required>
@@ -235,24 +232,6 @@
     </form>
 
  
-<form id="doctorForm" style="display: none;">
-      <input type="text" id="doctorName" name="doctorName" placeholder="Username" required>
-      <input type="email" id="doctorEmail" name="doctorEmail" placeholder="Email" required> 
-      <input type="password" id="doctorPassword" name="doctorPassword" placeholder="Password" required>
-      <select id="doctorGovernorate" name="doctorGovernorate" required style="width: 40%; padding: 10px; margin-bottom: 10px;box-sizing: border-box;border: 1px solid #ccc;border-radius: 4px;">
-        <option value="" selected disabled>Country</option>
-        <option value="governorate1">Damietta</option>
-        <option value="governorate2">Cairo</option>
-      </select>
-      <select id="doctorCity" name="doctorCity" required style="width: 40%; padding: 10px; margin-bottom: 10px;box-sizing: border-box;border: 1px solid #ccc;border-radius: 4px;">
-        <option value="" selected disabled>City</option>
-        <option value="city1">New Damietta</option>
-      </select>
-      <input id="doctorLocation" name="doctorLocation" placeholder="Add your address" required >
-      <input type="tel" id="doctorPhone" name="doctorPhone" placeholder="Phone Number" required>
-      <button type="submit" id="signUpDoc">Sign Up</button>
-    </form>
-
     <div class="login-link">
         <span style="color: #4e4e4e;">Already have an account ? </span><a href="#" style="font-weight: bold;"  onclick="toggleForm('login')">Log in</a>
     </div>
@@ -306,47 +285,38 @@
 function toggleForm(action) {
   var patientForm = document.getElementById("patientForm");
   var pharmacyForm = document.getElementById("pharmacyForm");
-  var doctorForm = document.getElementById("doctorForm");
   var loginForm = document.getElementById("loginForm");
   var loginLink = document.querySelector(".login-link");
   var backLink = document.querySelector(".back-link");
   var patientLabel = document.querySelector('label[for="patientRadio"]');
   var pharmacyLabel = document.querySelector('label[for="pharmacyRadio"]');
-  var doctorLabel = document.querySelector('label[for="doctorRadio"]');
   var patientRadio = document.getElementById("patientRadio");
   var pharmacyRadio = document.getElementById("pharmacyRadio");
-  var doctorRadio = document.getElementById("doctorRadio");
 
   if (action === "login") {
     patientForm.style.display = "none";
     pharmacyForm.style.display = "none";
-    doctorForm.style.display = "none";
     loginForm.style.display = "block";
     loginLink.style.display = "none";
     backLink.style.display = "block";
     patientLabel.style.display = "none";
     pharmacyLabel.style.display = "none";
-    doctorLabel.style.display = "none";
   } else if (action === "back") {
     patientForm.style.display = "block";
     pharmacyForm.style.display = "none";
-    doctorForm.style.display = "none";
     loginForm.style.display = "none";
     loginLink.style.display = "block";
     backLink.style.display = "none";
     patientLabel.style.display = "block";
     pharmacyLabel.style.display = "block";
-    doctorLabel.style.display = "block";
   } else {
     patientForm.style.display = patientRadio.checked ? "block" : "none";
     pharmacyForm.style.display = pharmacyRadio.checked ? "block" : "none";
-    doctorForm.style.display = doctorRadio.checked ? "block" : "none";
     loginForm.style.display = "none";
     loginLink.style.display = "block";
     backLink.style.display = "none";
     patientLabel.style.display = "block";
     pharmacyLabel.style.display = "block";
-    doctorLabel.style.display = "block";
   }
 }
 

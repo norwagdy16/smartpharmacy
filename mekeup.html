@@ -538,9 +538,9 @@ body{
                     <div class="product-categories">
                         <h2>Categories</h2>
                         <ul id="product-categories">
-                            <li  data-filter="all">All</li>
-                            <li  data-filter="Medicine">Medicine</li>
-                            <li class="active" data-filter="Make up">Make up</li>
+                            <li class="active" data-filter="all">All</li>
+                            <li data-filter="Medicine">Medicine</li>
+                            <li data-filter="Make up">Make up</li>
                             <li data-filter="Skincare Product">Skincare Product</li>
                             <li data-filter="Men Product">Men Product</li>
                             <li data-filter="Hair Product">Hair Product</li>
@@ -568,23 +568,5 @@ body{
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="js/product.js"></script>
 <script src="js/cart.js"></script>
-<script >
-// Function to render products based on category
-function renderProductsByCategory(category) {
-    const filteredProducts = productsData.filter(product => product.category === category);
-    renderProducts(filteredProducts);
-}
-
-const medicineCategory = document.querySelector('li[data-filter="Medicine"]');
-medicineCategory.addEventListener("click", () => {
-    categoryItems.forEach(item => item.classList.remove("active"));
-    medicineCategory.classList.add("active");
-    renderProductsByCategory("Make up");
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-    renderProductsByCategory("Make up");
-});
-</script> 
 </body>
 </html>

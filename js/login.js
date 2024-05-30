@@ -11,8 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
   let getpasswordpatient = localStorage.getItem("patientPassword");
   let getusernamepharmacy = localStorage.getItem("pharmacyName");
   let getpasswordpharmacy = localStorage.getItem("pharmacyPassword");
-  let getdoctorName = document.querySelector("#doctorName");
-  let getdoctorPassword = document.querySelector("#doctorPassword");
 
   // Create an array to hold the data
   let userpatientArray = [
@@ -24,11 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       username: getusernamepharmacy,
       password: getpasswordpharmacy,
-      role: "pharmacy",
-    },
-    {
-      username: getdoctorName,
-      password: getdoctorPassword,
       role: "pharmacy",
     },
   ];
@@ -64,15 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
           window.location = "../Pharmacy Home/Pharmacyhome.html";
         });
       } 
-      else if (
-        existingUsername.value === getdoctorName &&
-        existingPassword.value === getdoctorPassword
-      ) {
-        // Redirect to index.html after a delay
-        setTimeout(() => {
-          window.location = "../Doctor Home/Doctorhome.html";
-        });
-      } else {
+       else {
         // If no match is found, display an alert
         alert("Incorrect username or password");
       }
