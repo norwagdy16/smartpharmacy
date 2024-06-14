@@ -46,7 +46,6 @@ function displayCartItems() {
     cartItem.innerHTML = `<div class="product-item" data-product-id="1">
             <div class="col-md-3"><img src="${product.image}" alt="${product.name}"></div>
             <div class="col-md-4"><h3>${product.name}</h3>
-            <p>${product.description}</p>
             <p class="price">${product.price}</p></div>
             <div class="col-md-2">
               <div class="input-group quantity">
