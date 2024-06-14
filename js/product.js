@@ -4,7 +4,7 @@ const productsData = [
         id: 1,
         name: "Mazimal",
         category: "Medicine",
-        image: "images/maz.png",
+        image: "images/maze.jpg",
         price: "25 EGP",
          
     },
@@ -163,9 +163,9 @@ const productsData = [
     },
     {
         id: 21,
-        name: "vaxato",
+        name: "Panadol Extra",
         category: "Medicine",
-        image: "images/vaxa.jpg",
+        image: "images/1.png",
         price: "37 EGP",
          
     },
@@ -222,7 +222,7 @@ const productsData = [
         id: 28,
         name: "Consealer",
         category: "Make up",
-        image: "images/con.jpg",
+        image: "images/cc.jpg",
         price: "222 EGP",
          
     },
@@ -816,29 +816,34 @@ renderProducts(filteredProducts);
 function setupSearch() {
     const searchInput = document.getElementById("searchInput");
     searchInput.addEventListener("input", function() {
-        const searchTerm = searchInput.value.toLowerCase();
+        const searchTerm = searchInput.value.trim().toLowerCase();
         const currentCategory = document.querySelector("#product-categories li.active").getAttribute("data-filter");
         let filteredProducts;
 
-        if (currentCategory === "all") {
-            filteredProducts = productsData.filter(product => product.name.toLowerCase().includes(searchTerm));
-        } else {
-            filteredProducts = productsData.filter(product => product.name.toLowerCase().includes(searchTerm) && product.category === currentCategory);
-        }
+        // Check if search term has at least three characters before filtering
+        if (searchTerm.length >= 3) {
+            if (currentCategory === "all") {
+                filteredProducts = productsData.filter(product => product.name.toLowerCase().includes(searchTerm));
+            } else {
+                filteredProducts = productsData.filter(product => product.name.toLowerCase().includes(searchTerm) && product.category === currentCategory);
+            }
 
-        if (filteredProducts.length > 0) {
-            renderProducts(filteredProducts);
+            if (filteredProducts.length > 0) {
+                renderProducts(filteredProducts);
+            } else {
+                renderSoldOutMessage();
+            }
         } else {
-            renderSoldOutMessage();
+            // If search term is less than three characters, do not perform search
+            renderProducts(productsData); // Render all products
         }
     });
 }
 
-
-    function renderSoldOutMessage() {
-        const productsContainer = document.getElementById("products");
-        productsContainer.innerHTML = "<p>Sold Out</p>";
-    }
+function renderSoldOutMessage() {
+    const productsContainer = document.getElementById("products");
+    productsContainer.innerHTML = "<p>Sold Out</p>";
+}
 
 
 
