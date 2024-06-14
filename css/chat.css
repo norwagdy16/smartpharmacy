@@ -21,6 +21,11 @@ body{
     z-index: 7
 }
 
+.chat-history {
+    height: 400px; /* يمكنك ضبط هذا الارتفاع حسب الحاجة */
+    overflow-y: auto;
+}
+
 .chat-app .chat {
     margin-left: 350px;
     border-left: 1px solid #eaeaea
@@ -176,6 +181,9 @@ body{
 .chat .chat-message {
     padding: 20px
 }
+.form-control{
+    height: 50px;
+}
 
 .online,
 .offline,
@@ -244,6 +252,7 @@ body{
         overflow-x: auto
     }
 }
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
     .chat-app .chat-list {
         height: 480px;
