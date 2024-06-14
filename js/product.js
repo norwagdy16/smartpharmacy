@@ -4,9 +4,8 @@ const productsData = [
         id: 1,
         name: "Mazimal",
         category: "Medicine",
-        image: "images/maze.jpg",
-        description: "description",
-        price: "19 EGP",
+        image: "images/maz.png",
+        price: "25 EGP",
          
     },
     {
@@ -14,8 +13,7 @@ const productsData = [
         name: "Dolipran",
         category: "Medicine",
         image: "images/333.jpg",
-        description: "description",
-        price: "19 EGP",
+        price: "40 EGP",
          
     },
     {
@@ -23,8 +21,7 @@ const productsData = [
         name: "Cool-Strike",
         category: "Medicine",
         image: "images/cool.png",
-        description: "description",
-        price: "19 EGP",
+        price: "80 EGP",
          
     },
     {
@@ -32,8 +29,7 @@ const productsData = [
         name: "Diabenor",
         category: "Medicine",
         image: "images/diabe.jpg",
-        description: "description",
-        price: "19 EGP",
+        price: "40 EGP",
          
     },
     {
@@ -41,8 +37,7 @@ const productsData = [
         name: "B-cor",
         category: "Medicine",
         image: "images/1.jpg",
-        description: "description",
-        price: "19 EGP",
+        price: "11 EGP",
          
     },
     {
@@ -50,8 +45,7 @@ const productsData = [
         name: "Cataflam",
         category: "Medicine",
         image: "images/7.jpeg",
-        description: "description",
-        price: "19 EGP",
+        price: "62 EGP",
          
         
     },
@@ -60,8 +54,7 @@ const productsData = [
         name: "Nuzartan",
         category: "Medicine",
         image: "images/4.jpg",
-        description: "description",
-        price: "19 EGP",
+        price: "45 EGP",
          
     },
     {
@@ -69,8 +62,7 @@ const productsData = [
         name: "Diltiazem",
         category: "Medicine",
         image: "images/3.jpg",
-        description: "description",
-        price: "19 EGP",
+        price: "27 EGP",
          
     },
     {
@@ -78,8 +70,7 @@ const productsData = [
         name: "Catafast",
         category: "Medicine",
         image: "images/8.jpg",
-        description: "description",
-        price: "19 EGP",
+        price: "51 EGP",
          
     },
     {
@@ -87,8 +78,7 @@ const productsData = [
         name: "Aspirin",
         category: "Medicine",
         image: "images/asp.jpg",
-        description: "description",
-        price: "19 EGP",
+        price: "20 EGP",
          
     },
     {
@@ -96,8 +86,7 @@ const productsData = [
         name: "Detronin",
         category: "Medicine",
         image: "images/det.jpg",
-        description: "description",
-        price: "19 EGP",
+        price: "10 EGP",
          
     },
     {
@@ -105,8 +94,7 @@ const productsData = [
         name: "Epiphenicol",
         category: "Medicine",
         image: "images/epip.jpeg",
-        description: "description",
-        price: "19 EGP",
+        price: "25 EGP",
          
     },
     {
@@ -114,8 +102,7 @@ const productsData = [
         name: "Euthyrox",
         category: "Medicine",
         image: "images/euth.jpg",
-        description: "description",
-        price: "19 EGP",
+        price: "30 EGP",
          
     },
     {
@@ -123,8 +110,7 @@ const productsData = [
         name: "Ibuprosol",
         category: "Medicine",
         image: "images/ibu.jpg",
-        description: "description",
-        price: "19 EGP",
+        price: "35 EGP",
          
     },
     {
@@ -132,8 +118,7 @@ const productsData = [
         name: "Janaglip",
         category: "Medicine",
         image: "images/jana.jpg",
-        description: "description",
-        price: "19 EGP",
+        price: "40 EGP",
          
     },
     {
@@ -141,8 +126,7 @@ const productsData = [
         name: "Kefadim",
         category: "Medicine",
         image: "images/kefa.jpg",
-        description: "description",
-        price: "19 EGP",
+        price: "50 EGP",
          
     },
     {
@@ -150,495 +134,578 @@ const productsData = [
         name: "Repaglinide",
         category: "Medicine",
         image: "images/repa.jpg",
-        description: "description",
-        price: "19 EGP",
+        price: "55 EGP",
          
     },
     {
         id: 18,
-        name: "vaxato",
+        name: "Panadol Joint",
         category: "Medicine",
-        image: "images/vaxa.jpg",
-        description: "description",
-        price: "19 EGP",
+        image: "images/pan2.jpg",
+        price: "45 EGP",
          
     },
-
     {
         id: 19,
-        name: "Maybelline",
-        category: "Make up",
-        image: "images/88.jpg",
-        description: "description",
-        price: "24 EGP",
+        name: "Panadol Advance",
+        category: "Medicine",
+        image: "images/ban.jpg",
+        price: "44 EGP",
          
     },
     {
         id: 20,
-        name: "Foundation",
-        category: "Make up",
-        image: "images/cc.jpg",
-        description: "description",
-        price: "24 EGP",
+        name: "vaxato",
+        category: "Medicine",
+        image: "images/vaxa.jpg",
+        price: "33 EGP",
          
     },
     {
         id: 21,
-        name: "Rare Beauty",
-        category: "Make up",
-        image: "images/d.jpg",
-        description: "description",
-        price: "24 EGP",
+        name: "vaxato",
+        category: "Medicine",
+        image: "images/vaxa.jpg",
+        price: "37 EGP",
          
     },
+
     {
         id: 22,
-        name: "Amanda",
+        name: "Maybelline",
         category: "Make up",
-        image: "images/amanda.jpg",
-        description: "description",
-        price: "24 EGP",
+        image: "images/88.jpg",
+        price: "278 EGP",
          
     },
     {
         id: 23,
-        name: "SheGlam",
+        name: "Foundation",
         category: "Make up",
-        image: "images/blusher.jpg",
-        description: "description",
-        price: "24 EGP",
+        image: "images/cc.jpg",
+        price: "344 EGP",
          
     },
     {
         id: 24,
-        name: "Note",
+        name: "Rare Beauty",
         category: "Make up",
-        image: "images/blush.jpg",
-        description: "description",
-        price: "24 EGP",
+        image: "images/d.jpg",
+        price: "1500 EGP",
          
     },
     {
         id: 25,
-        name: "Consealer",
+        name: "Amanda",
         category: "Make up",
-        image: "images/con.jpg",
-        description: "description",
-        price: "24 EGP",
+        image: "images/amanda.jpg",
+        price: "200 EGP",
          
     },
     {
         id: 26,
-        name: "SheGlam Consealer",
+        name: "SheGlam",
         category: "Make up",
-        image: "images/cons.jpg",
-        description: "description",
-        price: "24 EGP",
+        image: "images/blusher.jpg",
+        price: "300 EGP",
          
     },
     {
         id: 27,
-        name: "Contor",
+        name: "Note",
         category: "Make up",
-        image: "images/contor.jpg",
-        description: "description",
-        price: "24 EGP",
+        image: "images/blush.jpg",
+        price: "350 EGP",
          
     },
     {
         id: 28,
-        name: "Lip Linear",
+        name: "Consealer",
         category: "Make up",
-        image: "images/liner.jpg",
-        description: "description",
-        price: "24 EGP",
+        image: "images/con.jpg",
+        price: "222 EGP",
          
     },
     {
         id: 29,
-        name: "Ket Lip Linear",
+        name: "SheGlam Consealer",
         category: "Make up",
-        image: "images/liner1.jpg",
-        description: "description",
-        price: "24 EGP",
+        image: "images/cons.jpg",
+        price: "333 EGP",
          
     },
     {
         id: 30,
-        name: "Lip Gloss",
+        name: "Contor",
         category: "Make up",
-        image: "images/lip.jpg",
-        description: "description",
-        price: "24 EGP",
+        image: "images/contor.jpg",
+        price: "250 EGP",
          
     },
     {
         id: 31,
-        name: "Lipstick",
+        name: "Lip Linear",
         category: "Make up",
-        image: "images/lip1.jpg",
-        description: "description",
-        price: "24 EGP",
+        image: "images/liner.jpg",
+        price: "150 EGP",
          
     },
     {
         id: 32,
-        name: "Max Factor",
+        name: " Lip Linear Kit",
         category: "Make up",
-        image: "images/max factor.jpg",
-        description: "description",
-        price: "24 EGP",
+        image: "images/liner1.jpg",
+        price: "230 EGP",
          
     },
     {
         id: 33,
+        name: "Lip Gloss",
+        category: "Make up",
+        image: "images/lip.jpg",
+        price: "255 EGP",
+         
+    },
+    {
+        id: 34,
+        name: "Lipstick",
+        category: "Make up",
+        image: "images/lip1.jpg",
+        price: "280 EGP",
+         
+    },
+    {
+        id: 35,
+        name: "Max Factor",
+        category: "Make up",
+        image: "images/max factor.jpg",
+        price: "500 EGP",
+         
+    },
+    {
+        id: 36,
         name: "HighLighter",
         category: "Make up",
         image: "images/mitecinam.jpg",
-        description: "description",
-        price: "24 EGP",
+        price: "370 EGP",
          
     },
     {
-        id: 9,
+        id: 37,
         name: "Powder",
         category: "Make up",
         image: "images/powder.jpg",
-        description: "description",
-        price: "24 EGP",
+        price: "444 EGP",
          
     },
     {
-        id: 9,
+        id: 40,
         name: "Essence",
         category: "Make up",
         image: "images/powder1.jpg",
-        description: "description",
-        price: "24 EGP",
+        price: "302 EGP",
          
     },
     {
-        id: 9,
+        id: 41,
         name: "Primer",
         category: "Make up",
         image: "images/primer.jpg",
-        description: "description",
-        price: "24 EGP",
+        price: "210 EGP",
+         
+    },
+    {
+        id: 42,
+        name: "Primer",
+        category: "Make up",
+        image: "images/primer.jpg",
+        price: "220 EGP",
          
     },
 
 {
-        id: 10,
+        id: 43,
         name: "La Roche Posay",
         category: "Skincare Product",
         image: "images/p.jpg",
-        description: "description",
-        price: "14 EGP",
+        price: "600 EGP",
          
     },
     {
-        id: 11,
+        id: 44,
         name: "Clean&Clear",
         category: "Skincare Product",
         image: "images/11.png",
-        description: "description",
-        price: "14 EGP",
+        price: "200 EGP",
          
     },
     {
-        id: 12,
+        id: 45,
         name: "Vichy",
         category: "Skincare Product",
         image: "images/33.png",
-        description: "description",
+        price: "700 EGP",
+         
+    },
+    {
+        id: 46,
+        name: "Vasline",
+        category: "Skincare Product",
+        image: "images/vas1.jpg",
+        price: "800 EGP",
+         
+    },
+    {
+        id: 47,
+        name: "Vasline Lip ",
+        category: "Skincare Product",
+        image: "images/vas2.jpg",
+        price: "250 EGP",
+         
+    },
+    {
+        id: 48,
+        name: "Vichy",
+        category: "Skincare Product",
+        image: "images/vas2.jpg",
+        price: "888 EGP",
+         
+    },
+    {
+        id: 49,
+        name: "Vichy",
+        category: "Skincare Product",
+        image: "images/vas2.jpg",
         price: "14 EGP",
          
     },
     {
-        id: 13,
+        id: 50,
+        name: "Vichy",
+        category: "Skincare Product",
+        image: "images/vas2.jpg",
+        price: "14 EGP",
+         
+    },
+    {
+        id: 51,
+        name: "Vichy",
+        category: "Skincare Product",
+        image: "images/vas2.jpg",
+        price: "14 EGP",
+         
+    },
+    {
+        id: 52,
+        name: "Vichy",
+        category: "Skincare Product",
+        image: "images/vas2.jpg",
+        price: "14 EGP",
+         
+    },
+    {
+        id: 53,
+        name: "Vichy",
+        category: "Skincare Product",
+        image: "images/vas2.jpg",
+        price: "14 EGP",
+         
+    },
+
+    {
+        id: 54,
         name: "North For Men",
         category: "Men Product",
         image: "images/6.jpeg",
-        description: "description",
-        price: "24 EGP",
+        price: "300 EGP",
          
     },
     {
-        id: 14,
+        id: 55,
         name: "Marbele",
         category: "Men Product",
         image: "images/9.jpeg",
-        description: "description",
-        price: "24 EGP",
+        price: "400 EGP",
          
     },
     {
-        id: 15,
+        id: 56,
         name: "Hair Remover",
         category: "Men Product",
         image: "images/101.jpg",
-        description: "description",
-        price: "24 EGP",
+        price: "450 EGP",
          
     },
     {
-        id: 15,
+        id: 57,
         name: "Hair Remover",
         category: "Men Product",
         image: "images/max.jpg",
-        description: "description",
-        price: "24 EGP",
+        price: "600 EGP",
          
     },
     {
-        id: 15,
+        id: 58,
         name: "Hair Remover",
         category: "Men Product",
         image: "images/lord.jpg",
-        description: "description",
-        price: "24 EGP",
+        price: "700 EGP",
          
     },
     {
-        id: 15,
+        id: 59,
         name: "Hair Remover",
         category: "Men Product",
         image: "images/jillet.jpg",
-        description: "description",
-        price: "24 EGP",
+        price: "350 EGP",
          
     },
     {
-        id: 15,
+        id: 60,
         name: "Hair Remover",
         category: "Men Product",
         image: "images/gillet1.jpg",
-        description: "description",
-        price: "24 EGP",
+        price: "400 EGP",
          
     },
     {
-        id: 15,
+        id: 61,
         name: "Hair Remover",
         category: "Men Product",
         image: "images/color.jpg",
-        description: "description",
-        price: "24 EGP",
+        price: "555 EGP",
+         
+    },
+    {
+        id: 62,
+        name: "Hair Remover",
+        category: "Men Product",
+        image: "images/color.jpg",
+        price: "111 EGP",
          
     },
 
 
     {
-        id: 16,
+        id: 63,
         name: "Shampoo",
         category: "Hair Product",
         image: "images/55.png",
-        description: "description",
-        price: "24 EGP",
+        price: "150 EGP",
          
     },
     {
-        id: 17,
+        id: 64,
         name: "Bless",
         category: "Hair Product",
         image: "images/555.jpg",
-        description: "description",
-        price: "24 EGP",
+        price: "120 EGP",
          
     },
     {
-        id: 18,
+        id: 65,
         name: "Clary",
         category: "Hair Product",
         image: "images/b.jpg",
-        description: "description",
-        price: "24 EGP",
+        price: "299 EGP",
          
     },
     {
-        id: 18,
+        id: 66,
         name: "Dermomde",
         category: "Hair Product",
         image: "images/derm1.jpg",
-        description: "description",
-        price: "24 EGP",
+        price: "70 EGP",
          
     },
     {
-        id: 18,
+        id: 67,
         name: "Dermomde",
         category: "Hair Product",
         image: "images/hairdo.jpeg",
-        description: "description",
-        price: "24 EGP",
+        price: "200 EGP",
+         
+    },
+    {
+        id: 68,
+        name: "Dermomde",
+        category: "Hair Product",
+        image: "images/hairdo.jpeg",
+        price: "250 EGP",
+         
+    },
+    {
+        id: 69,
+        name: "Dermomde",
+        category: "Hair Product",
+        image: "images/hairdo.jpeg",
+        price: "400 EGP",
+         
+    },
+    {
+        id: 70,
+        name: "Dermomde",
+        category: "Hair Product",
+        image: "images/hairdo.jpeg",
+        price: "210 EGP",
+         
+    },
+    {
+        id: 71,
+        name: "Dermomde",
+        category: "Hair Product",
+        image: "images/hairdo.jpeg",
+        price: "340 EGP",
          
     },
 
+
     {
-        id: 19,
+        id: 72,
         name: "Sanosan",
         category: "Baby Essentials",
         image: "images/77.png",
-        description: "description",
-        price: "24 EGP",
+        price: "425 EGP",
          
     },
     {
-        id: 20,
+        id: 73,
         name: "Gohnsons",
         category: "Baby Essentials",
         image: "images/5.jpg",
-        description: "description",
-        price: "24 EGP",
+        price: "69 EGP",
          
     },
     {
-        id: 21,
+        id: 74,
         name: "Sudocream",
         category: "Baby Essentials",
         image: "images/88.png",
-        description: "description",
-        price: "24 EGP",
+        price: "380 EGP",
     },
     {
-        id: 21,
+        id: 75,
         name: "Gohnsons Baby jelly",
         category: "Baby Essentials",
         image: "images/bab.jpg",
-        description: "description",
-        price: "24 EGP", 
+        price: "105 EGP", 
     },
     {
-        id: 21,
+        id: 76,
         name: "Baby Cream",
         category: "Baby Essentials",
         image: "images/dr.jpg",
-        description: "description",
-        price: "24 EGP",  
+        price: "218 EGP",  
     },
     {
-        id: 21,
+        id: 77,
         name: "Eva Baby Oil",
         category: "Baby Essentials",
         image: "images/baby.jpg",
-        description: "description",
-        price: "24 EGP",
+        price: "74 EGP",
     },
     {
-        id: 21,
+        id: 78,
         name: "Fine",
         category: "Baby Essentials",
         image: "images/fine.jpg",
-        description: "description",
-        price: "24 EGP",
+        price: "428 EGP",
          
     },
     {
-        id: 21,
+        id: 79,
         name: "I Care",
         category: "Baby Essentials",
         image: "images/icare1.jpg",
-        description: "description",
-        price: "24 EGP",
+        price: "48 EGP",
          
     },
     {
-        id: 21,
+        id: 80,
         name: "Super Kides",
         category: "Baby Essentials",
         image: "images/kids.jpeg",
-        description: "description",
-        price: "24 EGP",
+        price: "79 EGP",
          
     },
     {
-        id: 21,
+        id: 81,
         name: "MamaEarth",
         category: "Baby Essentials",
         image: "images/mama.jpg",
-        description: "description",
-        price: "24 EGP",
+        price: "219 EGP",
          
     },
     {
-        id: 21,
+        id: 82,
         name: "Nunu Babay cologne",
         category: "Baby Essentials",
         image: "images/nono.jpeg",
-        description: "description",
-        price: "24 EGP",
+        price: "56 EGP",
          
     },
     {
-        id: 21,
+        id: 83,
         name: "Nunu Babay Shampo",
         category: "Baby Essentials",
         image: "images/no sh.jpeg",
-        description: "description",
-        price: "24 EGP",
+        price: "210 EGP",
          
     },
     {
-        id: 21,
+        id: 84,
         name: "Penduline",
         category: "Baby Essentials",
         image: "images/pend.jpeg",
-        description: "description",
-        price: "24 EGP",
+        price: "81 EGP",
          
     },
     {
-        id: 21,
+        id: 85,
         name: "Sanosan",
         category: "Baby Essentials",
         image: "images/senso.jpg",
-        description: "description",
-        price: "24 EGP",
+        price: "633 EGP",
          
     },
     {
-        id: 21,
+        id: 86,
         name: "Gohnsons Lotion",
         category: "Baby Essentials",
         image: "images/lotion.jpeg",
-        description: "description",
-        price: "24 EGP",
+        price: "49 EGP",
          
     },
     {
-        id: 21,
+        id: 87,
         name: "Gohnsons lotion2",
         category: "Baby Essentials",
         image: "images/shampo.jpg",
-        description: "description",
-        price: "24 EGP",
+        price: "50 EGP",
          
     },
     {
-        id: 21,
+        id: 88,
         name: "Vatika Baby Oil",
         category: "Baby Essentials",
         image: "images/vatika1.jpg",
-        description: "description",
-        price: "24 EGP",
+        price: "32 EGP",
          
     },
     {
-        id: 21,
+        id: 89,
         name: "Tola Kids",
         category: "Baby Essentials",
         image: "images/tola1.jpg",
-        description: "description",
-        price: "24 EGP",
+        price: "118 EGP",
          
     },
     {
-        id: 21,
+        id: 90,
         name: "Toffee Kids",
         category: "Baby Essentials",
         image: "images/toffee.jpg",
-        description: "description",
-        price: "24 EGP",
+        price: "77 EGP",
          
     },
 
@@ -668,7 +735,6 @@ const productCard = `
 <div class="product" data-id="${product.id}" data-name="${product.name}" data-image="${product.image}" data-description="${product.description}" data-price="${product.price}">
     <a href="" target="_blank"><img src="${product.image}" alt="${product.name}"></a>
     <h3>${product.name}</h3>
-    <p>${product.description}</p>
     <p class="price">${product.price}</p>
     <button class="add-to-cart">Add to Cart</button>
 </div>`;
