@@ -147,11 +147,10 @@ const productsData = [
     },
     {
         id: 19,
-        name: "Panadol Advance",
+        name: "Panadol Extra",
         category: "Medicine",
-        image: "images/ban.jpg",
-        price: "44 EGP",
-         
+        image: "images/1.png",
+        price: "37 EGP",
     },
     {
         id: 20,
@@ -163,11 +162,10 @@ const productsData = [
     },
     {
         id: 21,
-        name: "Panadol Extra",
+        name: "Panadol Advance",
         category: "Medicine",
-        image: "images/1.png",
-        price: "37 EGP",
-         
+        image: "images/ban.jpg",
+        price: "44 EGP",
     },
 
     {
@@ -222,7 +220,7 @@ const productsData = [
         id: 28,
         name: "Consealer",
         category: "Make up",
-        image: "images/cc.jpg",
+        image: "images/n.jpg",
         price: "222 EGP",
          
     },
@@ -316,9 +314,9 @@ const productsData = [
     },
     {
         id: 42,
-        name: "Primer",
+        name: "Rare Beauty Mascara",
         category: "Make up",
-        image: "images/primer.jpg",
+        image: "images/e.jpg",
         price: "220 EGP",
          
     },
@@ -357,58 +355,57 @@ const productsData = [
     },
     {
         id: 47,
-        name: "Vasline Lip ",
+        name: "The Ordinary",
         category: "Skincare Product",
-        image: "images/vas2.jpg",
-        price: "250 EGP",
-         
+        image: "images/66.png",
+        price: "1400 EGP",  
     },
     {
         id: 48,
-        name: "Vichy",
+        name: "Vichy Mineral",
         category: "Skincare Product",
-        image: "images/vas2.jpg",
+        image: "images/10.jpg",
         price: "888 EGP",
          
     },
     {
         id: 49,
-        name: "Vichy",
+        name: "Tom Ford",
         category: "Skincare Product",
-        image: "images/vas2.jpg",
-        price: "14 EGP",
+        image: "images/11.jpeg",
+        price: "444 EGP",
          
     },
     {
         id: 50,
-        name: "Vichy",
+        name: "La Roche Toleriane",
         category: "Skincare Product",
-        image: "images/vas2.jpg",
-        price: "14 EGP",
+        image: "images/66.jpg",
+        price: "900 EGP",
          
     },
     {
         id: 51,
-        name: "Vichy",
+        name: "CeraVE",
         category: "Skincare Product",
-        image: "images/vas2.jpg",
-        price: "14 EGP",
+        image: "images/77.jpg",
+        price: "600 EGP",
          
     },
     {
         id: 52,
-        name: "Vichy",
+        name: "La Roche Cleanser",
         category: "Skincare Product",
-        image: "images/vas2.jpg",
-        price: "14 EGP",
+        image: "images/99.jpg",
+        price: "1000 EGP",
          
     },
     {
         id: 53,
-        name: "Vichy",
+        name: "Vasline Lip ",
         category: "Skincare Product",
         image: "images/vas2.jpg",
-        price: "14 EGP",
+        price: "250 EGP",
          
     },
 
@@ -446,42 +443,42 @@ const productsData = [
     },
     {
         id: 58,
-        name: "Hair Remover",
+        name: "North 3 in 1",
         category: "Men Product",
-        image: "images/lord.jpg",
+        image: "images/5.jpeg",
         price: "700 EGP",
          
     },
     {
         id: 59,
-        name: "Hair Remover",
+        name: "North Soap Bar",
         category: "Men Product",
-        image: "images/jillet.jpg",
+        image: "images/men.jpg",
         price: "350 EGP",
          
     },
     {
         id: 60,
-        name: "Hair Remover",
+        name: "Gillette",
         category: "Men Product",
-        image: "images/gillet1.jpg",
+        image: "images/mn2.jpeg",
         price: "400 EGP",
          
     },
     {
         id: 61,
-        name: "Hair Remover",
+        name: "Gillette Kit",
         category: "Men Product",
-        image: "images/color.jpg",
+        image: "images/mn1.jpeg",
         price: "555 EGP",
          
     },
     {
         id: 62,
-        name: "Hair Remover",
+        name: "Nivea",
         category: "Men Product",
-        image: "images/color.jpg",
-        price: "111 EGP",
+        image: "images/mn12.jpeg",
+        price: "700 EGP",
          
     },
 
@@ -520,15 +517,15 @@ const productsData = [
     },
     {
         id: 67,
-        name: "Dermomde",
+        name: "Pantene",
         category: "Hair Product",
-        image: "images/hairdo.jpeg",
+        image: "images/pan.jpg",
         price: "200 EGP",
          
     },
     {
         id: 68,
-        name: "Dermomde",
+        name: "HairDO",
         category: "Hair Product",
         image: "images/hairdo.jpeg",
         price: "250 EGP",
@@ -536,25 +533,25 @@ const productsData = [
     },
     {
         id: 69,
-        name: "Dermomde",
+        name: "Enliven",
         category: "Hair Product",
-        image: "images/hairdo.jpeg",
+        image: "images/elevn.jpg",
         price: "400 EGP",
          
     },
     {
         id: 70,
-        name: "Dermomde",
+        name: "Herbal",
         category: "Hair Product",
-        image: "images/hairdo.jpeg",
+        image: "images/herbal.jpg",
         price: "210 EGP",
          
     },
     {
         id: 71,
-        name: "Dermomde",
+        name: "Ever Pure Shampo",
         category: "Hair Product",
-        image: "images/hairdo.jpeg",
+        image: "images/ever1.jpg",
         price: "340 EGP",
          
     },

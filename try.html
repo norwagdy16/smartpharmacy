@@ -806,17 +806,64 @@ document.addEventListener("DOMContentLoaded", function () {
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 // Function to render products
+// function renderProducts(products) {
+//     const productsContainer = document.getElementById("products");
+//     productsContainer.innerHTML = "";
+//     products.forEach(product => {
+//         const productCard = `
+//         <div class="product" data-id="${product.id}" data-name="${product.name}" data-image="${product.image}" data-description="${product.description}" data-price="${product.price}">
+//             <a href="" target="_blank"><img src="${product.image}" alt="${product.name}"></a>
+//             <h3>${product.name}</h3>
+//             <p>${product.description}</p>
+//             <p class="price">${product.price}</p>
+//             <button class="add-to-cart" data-id="${product.id}">Add to Cart</button>
+//         </div>`;
+//         productsContainer.innerHTML += productCard;
+//     });
+
+    // Function to update UI based on the items in the cart
+function updateCartUI() {
+    const addToCartButtons = document.querySelectorAll(".add-to-cart");
+    addToCartButtons.forEach(button => {
+        const productId = parseInt(button.getAttribute("data-id"));
+        const inCart = cart.some(product => product.id === productId);
+        if (productId === 23 || productId === 25) {
+            if (inCart) {
+                button.textContent = "Sold Out";
+                button.classList.add("added");
+                button.style.backgroundColor = "rgb(77, 128, 77)"; // Change background color to green
+                button.disabled = true;
+            } else {
+                button.textContent = "Add to Cart";
+                button.classList.remove("added");
+                button.style.backgroundColor = "#045c85"; // Reset background color
+                button.disabled = false;
+            }
+        } else {
+            if (inCart) {
+                button.textContent = "Sold Out";
+                button.classList.add("added");
+                button.disabled = true;
+            }
+        }
+    });
+}
+
+// Function to render products
 function renderProducts(products) {
     const productsContainer = document.getElementById("products");
     productsContainer.innerHTML = "";
     products.forEach(product => {
+        const inCart = cart.some(cartProduct => cartProduct.id === product.id);
         const productCard = `
         <div class="product" data-id="${product.id}" data-name="${product.name}" data-image="${product.image}" data-description="${product.description}" data-price="${product.price}">
             <a href="" target="_blank"><img src="${product.image}" alt="${product.name}"></a>
             <h3>${product.name}</h3>
             <p>${product.description}</p>
             <p class="price">${product.price}</p>
-            <button class="add-to-cart" data-id="${product.id}">Add to Cart</button>
+            <button class="add-to-cart ${inCart && (product.id !== 23 && product.id !== 25) ? 'added' : ''}" data-id="${product.id}" ${inCart ? 'disabled' : ''}>
+                ${inCart ? 'Sold Out' : 'Add to Cart'}
+            </button>
         </div>`;
         productsContainer.innerHTML += productCard;
     });
@@ -840,6 +887,25 @@ function renderProducts(products) {
     });
 }
 
+    // Add event listener to "Add to Cart" buttons
+//     const addToCartButtons = document.querySelectorAll(".add-to-cart");
+//     addToCartButtons.forEach(button => {
+//         button.addEventListener("click", () => {
+//             const productId = parseInt(button.getAttribute("data-id"));
+//             const selectedProduct = productsData.find(product => product.id === productId);
+//             if (selectedProduct) {
+//                 button.textContent = "Sold Out"; // Change button text to "Sold Out"
+//                 button.classList.add("added"); // Add 'added' class for styling
+//                 button.disabled = true; // Disable button after adding to cart
+//                 addToCart(selectedProduct); // Add selected product to cart
+//                 updateCartUI(); // Update UI to show product as added
+//                 saveCartToLocalStorage(); // Save updated cart to local storage
+//                 updateCartCount(); // Update cart count in header
+//             }
+//         });
+//     });
+// }
+
 function addToCart(product) {
     cart.push(product); // Add product to cart array
     updateCartCount();
@@ -860,18 +926,18 @@ function loadCartFromLocalStorage() {
 }
 
 // Function to update UI based on the items in the cart
-function updateCartUI() {
-    const addToCartButtons = document.querySelectorAll(".add-to-cart");
-    addToCartButtons.forEach(button => {
-        const productId = parseInt(button.getAttribute("data-id"));
-        const inCart = cart.some(product => product.id === productId);
-        if (inCart) {
-            button.textContent = "Sold Out";
-            button.classList.add("added");
-            button.disabled = true;
-        }
-    });
-}
+// function updateCartUI() {
+//     const addToCartButtons = document.querySelectorAll(".add-to-cart");
+//     addToCartButtons.forEach(button => {
+//         const productId = parseInt(button.getAttribute("data-id"));
+//         const inCart = cart.some(product => product.id === productId);
+//         if (inCart) {
+//             button.textContent = "Sold Out";
+//             button.classList.add("added");
+//             button.disabled = true;
+//         }
+//     });
+// }
 
 function saveCartToLocalStorage() {
     localStorage.setItem("cart", JSON.stringify(cart)); // Save cart to local storage
