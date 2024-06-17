@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/fav.png">
+    <title>Symptom Checker</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 500px;
+        }
+
+        h2 {
+            color: #045c85;
+        }
+
+        .btn-primary {
+            background-color:#045c85;
+            border-color:#045c85;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <!-- Symptom Checker Header -->
+        <div class="text-center mb-4">
+            <h2>Symptom Checker</h2>
+        </div>
+
+        <!-- Symptom Input Form -->
+        <div id="symptomForm">
+            <div class="form-group">
+                <label for="symptoms" style="font-size: 30px; margin-left: 80px;">Enter your symptoms:</label>
+                <br> <br>
+                <input type="text" class="form-control" id="symptoms" placeholder="Enter symptoms">
+                <br>
+            </div>
+            <button class="btn btn-primary" onclick="submitSymptoms()" style="border-radius: 6px; margin-left: 130px; width: 200px;">Submit</button>
+        </div>
+
+        <!-- Conditions Form -->
+        <div id="conditionsForm" class="mt-4" style="display: none;">
+            <label style="color: #045c85; font-size: 30px;">Do you have any of the following conditions?</label>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Diabetes" id="diabetes">
+                <label class="form-check-label" for="diabetes">Diabetes</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Heart Disease" id="heartDisease">
+                <label class="form-check-label" for="heartDisease">Heart Disease</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="High Blood Pressure" id="highBloodPressure">
+                <label class="form-check-label" for="highBloodPressure">High Blood Pressure</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Asthma" id="asthma">
+                <label class="form-check-label" for="asthma">Asthma</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Kidney Disease" id="kidneyDisease">
+                <label class="form-check-label" for="kidneyDisease">Kidney Disease</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Liver Disease" id="liverDisease">
+                <label class="form-check-label" for="liverDisease">Liver Disease</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Epilepsy" id="epilepsy">
+                <label class="form-check-label" for="epilepsy">Epilepsy</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Thyroid Disorders" id="thyroidDisorders">
+                <label class="form-check-label" for="thyroidDisorders">Thyroid Disorders</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Automation Disorders" id="automationDisorders">
+                <label class="form-check-label" for="automationDisorders">Automation Disorders</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Mental Health Conditions" id="MentalHealthConditions">
+                <label class="form-check-label" for="MentalHealthConditions">Mental Health Conditions</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Allergies" id="Allergies">
+                <label class="form-check-label" for="Allergies">Allergies</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Cancer" id="Cancer">
+                <label class="form-check-label" for="Cancer">Cancer</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Pregnancy" id="Pregnancy">
+                <label class="form-check-label" for="Pregnancy">Pregnancy</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Obesity" id="Obesity">
+                <label class="form-check-label" for="Obesity">Obesity</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Smoking" id="Smoking">
+                <label class="form-check-label" for="Smoking">Smoking</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Nothing" id="Nothing">
+                <label class="form-check-label" for="Nothing">Nothing</label>
+            </div>
+
+            <button class="btn btn-primary mt-3" onclick="submitConditions()" style="border-radius: 6px; margin-left: 130px; width: 200px;">Submit Conditions</button>
+        </div>
+
+        <!-- Medication Suggestions -->
+        <div id="medicationSuggestions" class="mt-4" style="display: none; ">
+            <h4 style="margin-left: 160px; color: red;">Medications:</h4>
+            <div id="medicationList"></div>
+        </div>
+    </div>
+
+    <script>
+        function submitSymptoms() {
+            const symptoms = document.getElementById('symptoms').value;
+            if (symptoms) {
+                document.getElementById('symptomForm').style.display = 'none';
+                document.getElementById('conditionsForm').style.display = 'block';
+            }
+        }
+
+        function submitConditions() {
+            const conditions = [];
+            let hasCondition = false;
+            document.querySelectorAll('#conditionsForm input[type=checkbox]:checked').forEach((checkbox) => {
+                if (checkbox.value !== "Nothing") {
+                    hasCondition = true;
+                }
+                conditions.push(checkbox.value);
+            });
+
+            if (hasCondition) {
+                alert('Important:Please Meet With A Doctor To Discuss Your Conditions.');
+            }
+
+            // Simulating the process of determining the medication based on symptoms and conditions
+            const medications = determineMedications();
+
+            displayMedications(medications);
+        }
+
+        
+
+        function determineMedications() {
+            // This function simulates the determination of medications based on symptoms and conditions
+            // For simplicity, it returns a static medication suggestion
+            return [
+                { name: '<span style="color: #045c85;">Paracetamol</span>', price: '<span style="color: red;">5.0</span>', material: '<span style="color: red;">Paracetamol</span>'}
+            ];
+        }
+
+        function displayMedications(medications) {
+            const medicationList = document.getElementById('medicationList');
+            medicationList.innerHTML = '';
+
+            medications.forEach(medication => {
+                const medicationItem = document.createElement('div');
+                medicationItem.classList.add('card', 'mb-3');
+                medicationItem.innerHTML = `
+                    <div class="card-body">
+                        <h5 class="card-title">${medication.name}</h5>
+                        <p class="card-text">Price: ${medication.price}</p>
+                        <p class="card-text">Effective Material: ${medication.material}</p>
+                    </div>
+                `;
+                medicationList.appendChild(medicationItem);
+            });
+
+            document.getElementById('conditionsForm').style.display = 'none';
+            document.getElementById('medicationSuggestions').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
+
+
