@@ -732,7 +732,6 @@ function renderProducts(products) {
         <div class="product" data-id="${product.id}" data-name="${product.name}" data-image="${product.image}" data-description="${product.description}" data-price="${product.price}">
             <a href="#" target="_blank"><img src="${product.image}" alt="${product.name}"></a>
             <h3>${product.name}</h3>
-            <p>${product.description}</p>
             <p class="price">${product.price}</p>
             <button class="add-to-cart ${isLastInCategory ? 'last-in-category' : ''}" data-id="${product.id}" ${inCart ? 'disabled class="added"' : ''}>${inCart ? 'Sold Out' : 'Add to Cart'}</button>
         </div>`;
