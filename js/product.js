@@ -2,18 +2,18 @@
 const productsData = [
     {
         id: 1,
-        name: "Mazimal",
+        name: "Mazimal CR",
         category: "Medicine",
         image: "images/maze.jpg",
-        price: "25 EGP",
+        price: "10.00 EGP",
          
     },
     {
         id: 2,
-        name: "Dolipran",
+        name: "Diabenor",
         category: "Medicine",
-        image: "images/333.jpg",
-        price: "40 EGP",
+        image: "images/diabe.jpg",
+        price: "3.00 EGP",
          
     },
     {
@@ -21,23 +21,22 @@ const productsData = [
         name: "Cool-Strike",
         category: "Medicine",
         image: "images/cool.png",
-        price: "80 EGP",
+        price: "80.00 EGP",
          
     },
     {
         id: 4,
-        name: "Diabenor",
+        name: "Dolipran",
         category: "Medicine",
-        image: "images/diabe.jpg",
-        price: "40 EGP",
-         
+        image: "images/333.jpg",
+        price: "40.00 EGP",  
     },
     {
         id: 5,
         name: "B-cor",
         category: "Medicine",
         image: "images/1.jpg",
-        price: "11 EGP",
+        price: "11.00 EGP",
          
     },
     {
@@ -45,7 +44,7 @@ const productsData = [
         name: "Cataflam",
         category: "Medicine",
         image: "images/7.jpeg",
-        price: "62 EGP",
+        price: "62.00 EGP",
          
         
     },
@@ -54,7 +53,7 @@ const productsData = [
         name: "Nuzartan",
         category: "Medicine",
         image: "images/4.jpg",
-        price: "45 EGP",
+        price: "45.00 EGP",
          
     },
     {
@@ -62,7 +61,7 @@ const productsData = [
         name: "Diltiazem",
         category: "Medicine",
         image: "images/3.jpg",
-        price: "27 EGP",
+        price: "27.00 EGP",
          
     },
     {
@@ -70,7 +69,7 @@ const productsData = [
         name: "Catafast",
         category: "Medicine",
         image: "images/8.jpg",
-        price: "51 EGP",
+        price: "51.00 EGP",
          
     },
     {
@@ -78,7 +77,7 @@ const productsData = [
         name: "Aspirin",
         category: "Medicine",
         image: "images/asp.jpg",
-        price: "20 EGP",
+        price: "20.00 EGP",
          
     },
     {
@@ -86,7 +85,7 @@ const productsData = [
         name: "Detronin",
         category: "Medicine",
         image: "images/det.jpg",
-        price: "10 EGP",
+        price: "10.00 EGP",
          
     },
     {
@@ -94,7 +93,7 @@ const productsData = [
         name: "Epiphenicol",
         category: "Medicine",
         image: "images/epip.jpeg",
-        price: "25 EGP",
+        price: "25.00 EGP",
          
     },
     {
@@ -102,7 +101,7 @@ const productsData = [
         name: "Euthyrox",
         category: "Medicine",
         image: "images/euth.jpg",
-        price: "30 EGP",
+        price: "30.00 EGP",
          
     },
     {
@@ -110,7 +109,7 @@ const productsData = [
         name: "Ibuprosol",
         category: "Medicine",
         image: "images/ibu.jpg",
-        price: "35 EGP",
+        price: "35.00 EGP",
          
     },
     {
@@ -126,7 +125,7 @@ const productsData = [
         name: "Kefadim",
         category: "Medicine",
         image: "images/kefa.jpg",
-        price: "50 EGP",
+        price: "50.00 EGP",
          
     },
     {
@@ -134,7 +133,7 @@ const productsData = [
         name: "Repaglinide",
         category: "Medicine",
         image: "images/repa.jpg",
-        price: "55 EGP",
+        price: "55.00 EGP",
          
     },
     {
@@ -142,7 +141,7 @@ const productsData = [
         name: "Panadol Joint",
         category: "Medicine",
         image: "images/pan2.jpg",
-        price: "45 EGP",
+        price: "45.00 EGP",
          
     },
     {
@@ -150,14 +149,14 @@ const productsData = [
         name: "Panadol Extra",
         category: "Medicine",
         image: "images/1.png",
-        price: "37 EGP",
+        price: "37.00 EGP",
     },
     {
         id: 20,
         name: "vaxato",
         category: "Medicine",
         image: "images/vaxa.jpg",
-        price: "33 EGP",
+        price: "33.00 EGP",
          
     },
     {
@@ -165,7 +164,7 @@ const productsData = [
         name: "Panadol Advance",
         category: "Medicine",
         image: "images/ban.jpg",
-        price: "44 EGP",
+        price: "44.00 EGP",
     },
 
     {
@@ -173,7 +172,7 @@ const productsData = [
         name: "Maybelline",
         category: "Make up",
         image: "images/88.jpg",
-        price: "278 EGP",
+        price: "278.00 EGP",
          
     },
     {
@@ -181,7 +180,7 @@ const productsData = [
         name: "Foundation",
         category: "Make up",
         image: "images/cc.jpg",
-        price: "344 EGP",
+        price: "344.00 EGP",
          
     },
     {
@@ -189,7 +188,7 @@ const productsData = [
         name: "Rare Beauty",
         category: "Make up",
         image: "images/d.jpg",
-        price: "1500 EGP",
+        price: "1500.00 EGP",
          
     },
     {
@@ -197,7 +196,7 @@ const productsData = [
         name: "Amanda",
         category: "Make up",
         image: "images/amanda.jpg",
-        price: "200 EGP",
+        price: "200.00 EGP",
          
     },
     {
@@ -205,7 +204,7 @@ const productsData = [
         name: "SheGlam",
         category: "Make up",
         image: "images/blusher.jpg",
-        price: "300 EGP",
+        price: "300.00 EGP",
          
     },
     {
@@ -213,7 +212,7 @@ const productsData = [
         name: "Note",
         category: "Make up",
         image: "images/blush.jpg",
-        price: "350 EGP",
+        price: "350.00 EGP",
          
     },
     {
@@ -221,7 +220,7 @@ const productsData = [
         name: "Consealer",
         category: "Make up",
         image: "images/n.jpg",
-        price: "222 EGP",
+        price: "222.00 EGP",
          
     },
     {
@@ -229,7 +228,7 @@ const productsData = [
         name: "SheGlam Consealer",
         category: "Make up",
         image: "images/cons.jpg",
-        price: "333 EGP",
+        price: "333.00 EGP",
          
     },
     {
@@ -237,7 +236,7 @@ const productsData = [
         name: "Contor",
         category: "Make up",
         image: "images/contor.jpg",
-        price: "250 EGP",
+        price: "250.00 EGP",
          
     },
     {
@@ -245,7 +244,7 @@ const productsData = [
         name: "Lip Linear",
         category: "Make up",
         image: "images/liner.jpg",
-        price: "150 EGP",
+        price: "150.00 EGP",
          
     },
     {
@@ -253,7 +252,7 @@ const productsData = [
         name: " Lip Linear Kit",
         category: "Make up",
         image: "images/liner1.jpg",
-        price: "230 EGP",
+        price: "230.00 EGP",
          
     },
     {
@@ -261,7 +260,7 @@ const productsData = [
         name: "Lip Gloss",
         category: "Make up",
         image: "images/lip.jpg",
-        price: "255 EGP",
+        price: "255.00 EGP",
          
     },
     {
@@ -269,7 +268,7 @@ const productsData = [
         name: "Lipstick",
         category: "Make up",
         image: "images/lip1.jpg",
-        price: "280 EGP",
+        price: "280.00 EGP",
          
     },
     {
@@ -277,7 +276,7 @@ const productsData = [
         name: "Max Factor",
         category: "Make up",
         image: "images/max factor.jpg",
-        price: "500 EGP",
+        price: "500.00 EGP",
          
     },
     {
@@ -285,7 +284,7 @@ const productsData = [
         name: "HighLighter",
         category: "Make up",
         image: "images/mitecinam.jpg",
-        price: "370 EGP",
+        price: "370.00 EGP",
          
     },
     {
@@ -293,7 +292,7 @@ const productsData = [
         name: "Powder",
         category: "Make up",
         image: "images/powder.jpg",
-        price: "444 EGP",
+        price: "444.00 EGP",
          
     },
     {
@@ -301,7 +300,7 @@ const productsData = [
         name: "Essence",
         category: "Make up",
         image: "images/powder1.jpg",
-        price: "302 EGP",
+        price: "302.00 EGP",
          
     },
     {
@@ -309,7 +308,7 @@ const productsData = [
         name: "Primer",
         category: "Make up",
         image: "images/primer.jpg",
-        price: "210 EGP",
+        price: "210.00 EGP",
          
     },
     {
@@ -317,7 +316,7 @@ const productsData = [
         name: "Rare Beauty Mascara",
         category: "Make up",
         image: "images/e.jpg",
-        price: "220 EGP",
+        price: "2200.00 EGP",
          
     },
 
@@ -326,7 +325,7 @@ const productsData = [
         name: "La Roche Posay",
         category: "Skincare Product",
         image: "images/p.jpg",
-        price: "600 EGP",
+        price: "600.00 EGP",
          
     },
     {
@@ -334,7 +333,7 @@ const productsData = [
         name: "Clean&Clear",
         category: "Skincare Product",
         image: "images/11.png",
-        price: "200 EGP",
+        price: "200.00 EGP",
          
     },
     {
@@ -342,7 +341,7 @@ const productsData = [
         name: "Vichy",
         category: "Skincare Product",
         image: "images/33.png",
-        price: "700 EGP",
+        price: "700.00 EGP",
          
     },
     {
@@ -350,7 +349,7 @@ const productsData = [
         name: "Vasline",
         category: "Skincare Product",
         image: "images/vas1.jpg",
-        price: "800 EGP",
+        price: "800.00 EGP",
          
     },
     {
@@ -358,14 +357,14 @@ const productsData = [
         name: "The Ordinary",
         category: "Skincare Product",
         image: "images/66.png",
-        price: "1400 EGP",  
+        price: "1400.00 EGP",  
     },
     {
         id: 48,
         name: "Vichy Mineral",
         category: "Skincare Product",
         image: "images/10.jpg",
-        price: "888 EGP",
+        price: "888.00 EGP",
          
     },
     {
@@ -373,7 +372,7 @@ const productsData = [
         name: "Tom Ford",
         category: "Skincare Product",
         image: "images/11.jpeg",
-        price: "444 EGP",
+        price: "444.00 EGP",
          
     },
     {
@@ -381,7 +380,7 @@ const productsData = [
         name: "La Roche Toleriane",
         category: "Skincare Product",
         image: "images/66.jpg",
-        price: "900 EGP",
+        price: "900.00 EGP",
          
     },
     {
@@ -389,7 +388,7 @@ const productsData = [
         name: "CeraVE",
         category: "Skincare Product",
         image: "images/77.jpg",
-        price: "600 EGP",
+        price: "600.00 EGP",
          
     },
     {
@@ -397,7 +396,7 @@ const productsData = [
         name: "La Roche Cleanser",
         category: "Skincare Product",
         image: "images/99.jpg",
-        price: "1000 EGP",
+        price: "1000.00 EGP",
          
     },
     {
@@ -405,7 +404,7 @@ const productsData = [
         name: "Vasline Lip ",
         category: "Skincare Product",
         image: "images/vas2.jpg",
-        price: "250 EGP",
+        price: "250.00 EGP",
          
     },
 
@@ -414,7 +413,7 @@ const productsData = [
         name: "North For Men",
         category: "Men Product",
         image: "images/6.jpeg",
-        price: "300 EGP",
+        price: "300.00 EGP",
          
     },
     {
@@ -422,7 +421,7 @@ const productsData = [
         name: "Marbele",
         category: "Men Product",
         image: "images/9.jpeg",
-        price: "400 EGP",
+        price: "400.00 EGP",
          
     },
     {
@@ -430,7 +429,7 @@ const productsData = [
         name: "Hair Remover",
         category: "Men Product",
         image: "images/101.jpg",
-        price: "450 EGP",
+        price: "450.00 EGP",
          
     },
     {
@@ -438,7 +437,7 @@ const productsData = [
         name: "Hair Remover",
         category: "Men Product",
         image: "images/max.jpg",
-        price: "600 EGP",
+        price: "600.00 EGP",
          
     },
     {
@@ -446,7 +445,7 @@ const productsData = [
         name: "North 3 in 1",
         category: "Men Product",
         image: "images/5.jpeg",
-        price: "700 EGP",
+        price: "700.00 EGP",
          
     },
     {
@@ -454,7 +453,7 @@ const productsData = [
         name: "North Soap Bar",
         category: "Men Product",
         image: "images/men.jpg",
-        price: "350 EGP",
+        price: "350.00 EGP",
          
     },
     {
@@ -462,7 +461,7 @@ const productsData = [
         name: "Gillette",
         category: "Men Product",
         image: "images/mn2.jpeg",
-        price: "400 EGP",
+        price: "400.00 EGP",
          
     },
     {
@@ -470,7 +469,7 @@ const productsData = [
         name: "Gillette Kit",
         category: "Men Product",
         image: "images/mn1.jpeg",
-        price: "555 EGP",
+        price: "555.00 EGP",
          
     },
     {
@@ -478,7 +477,7 @@ const productsData = [
         name: "Nivea",
         category: "Men Product",
         image: "images/mn12.jpeg",
-        price: "700 EGP",
+        price: "700.00 EGP",
          
     },
 
@@ -488,7 +487,7 @@ const productsData = [
         name: "Shampoo",
         category: "Hair Product",
         image: "images/55.png",
-        price: "150 EGP",
+        price: "150.00 EGP",
          
     },
     {
@@ -496,7 +495,7 @@ const productsData = [
         name: "Bless",
         category: "Hair Product",
         image: "images/555.jpg",
-        price: "120 EGP",
+        price: "120.00 EGP",
          
     },
     {
@@ -504,7 +503,7 @@ const productsData = [
         name: "Clary",
         category: "Hair Product",
         image: "images/b.jpg",
-        price: "299 EGP",
+        price: "299.00 EGP",
          
     },
     {
@@ -512,7 +511,7 @@ const productsData = [
         name: "Dermomde",
         category: "Hair Product",
         image: "images/derm1.jpg",
-        price: "70 EGP",
+        price: "70.00 EGP",
          
     },
     {
@@ -520,7 +519,7 @@ const productsData = [
         name: "Pantene",
         category: "Hair Product",
         image: "images/pan.jpg",
-        price: "200 EGP",
+        price: "200.00 EGP",
          
     },
     {
@@ -528,7 +527,7 @@ const productsData = [
         name: "HairDO",
         category: "Hair Product",
         image: "images/hairdo.jpeg",
-        price: "250 EGP",
+        price: "250.00 EGP",
          
     },
     {
@@ -536,7 +535,7 @@ const productsData = [
         name: "Enliven",
         category: "Hair Product",
         image: "images/elevn.jpg",
-        price: "400 EGP",
+        price: "400.00 EGP",
          
     },
     {
@@ -544,7 +543,7 @@ const productsData = [
         name: "Herbal",
         category: "Hair Product",
         image: "images/herbal.jpg",
-        price: "210 EGP",
+        price: "210.00 EGP",
          
     },
     {
@@ -552,7 +551,7 @@ const productsData = [
         name: "Ever Pure Shampo",
         category: "Hair Product",
         image: "images/ever1.jpg",
-        price: "340 EGP",
+        price: "340.00 EGP",
          
     },
 
@@ -562,7 +561,7 @@ const productsData = [
         name: "Sanosan",
         category: "Baby Essentials",
         image: "images/77.png",
-        price: "425 EGP",
+        price: "425.00 EGP",
          
     },
     {
@@ -570,7 +569,7 @@ const productsData = [
         name: "Gohnsons",
         category: "Baby Essentials",
         image: "images/5.jpg",
-        price: "69 EGP",
+        price: "69.00 EGP",
          
     },
     {
@@ -578,35 +577,35 @@ const productsData = [
         name: "Sudocream",
         category: "Baby Essentials",
         image: "images/88.png",
-        price: "380 EGP",
+        price: "380.00 EGP",
     },
     {
         id: 75,
         name: "Gohnsons Baby jelly",
         category: "Baby Essentials",
         image: "images/bab.jpg",
-        price: "105 EGP", 
+        price: "105.00 EGP", 
     },
     {
         id: 76,
         name: "Baby Cream",
         category: "Baby Essentials",
         image: "images/dr.jpg",
-        price: "218 EGP",  
+        price: "218.00 EGP",  
     },
     {
         id: 77,
         name: "Eva Baby Oil",
         category: "Baby Essentials",
         image: "images/baby.jpg",
-        price: "74 EGP",
+        price: "74.00 EGP",
     },
     {
         id: 78,
         name: "Fine",
         category: "Baby Essentials",
         image: "images/fine.jpg",
-        price: "428 EGP",
+        price: "428.00 EGP",
          
     },
     {
@@ -614,7 +613,7 @@ const productsData = [
         name: "I Care",
         category: "Baby Essentials",
         image: "images/icare1.jpg",
-        price: "48 EGP",
+        price: "48.00 EGP",
          
     },
     {
@@ -622,7 +621,7 @@ const productsData = [
         name: "Super Kides",
         category: "Baby Essentials",
         image: "images/kids.jpeg",
-        price: "79 EGP",
+        price: "79.00 EGP",
          
     },
     {
@@ -630,7 +629,7 @@ const productsData = [
         name: "MamaEarth",
         category: "Baby Essentials",
         image: "images/mama.jpg",
-        price: "219 EGP",
+        price: "219.00 EGP",
          
     },
     {
@@ -638,7 +637,7 @@ const productsData = [
         name: "Nunu Babay cologne",
         category: "Baby Essentials",
         image: "images/nono.jpeg",
-        price: "56 EGP",
+        price: "56.00 EGP",
          
     },
     {
@@ -646,7 +645,7 @@ const productsData = [
         name: "Nunu Babay Shampo",
         category: "Baby Essentials",
         image: "images/no sh.jpeg",
-        price: "210 EGP",
+        price: "210.00 EGP",
          
     },
     {
@@ -654,7 +653,7 @@ const productsData = [
         name: "Penduline",
         category: "Baby Essentials",
         image: "images/pend.jpeg",
-        price: "81 EGP",
+        price: "81.00 EGP",
          
     },
     {
@@ -662,7 +661,7 @@ const productsData = [
         name: "Sanosan",
         category: "Baby Essentials",
         image: "images/senso.jpg",
-        price: "633 EGP",
+        price: "633.00 EGP",
          
     },
     {
@@ -670,7 +669,7 @@ const productsData = [
         name: "Gohnsons Lotion",
         category: "Baby Essentials",
         image: "images/lotion.jpeg",
-        price: "49 EGP",
+        price: "49.00 EGP",
          
     },
     {
@@ -678,7 +677,7 @@ const productsData = [
         name: "Gohnsons lotion2",
         category: "Baby Essentials",
         image: "images/shampo.jpg",
-        price: "50 EGP",
+        price: "50.00 EGP",
          
     },
     {
@@ -686,7 +685,7 @@ const productsData = [
         name: "Vatika Baby Oil",
         category: "Baby Essentials",
         image: "images/vatika1.jpg",
-        price: "32 EGP",
+        price: "32.00 EGP",
          
     },
     {
@@ -694,7 +693,7 @@ const productsData = [
         name: "Tola Kids",
         category: "Baby Essentials",
         image: "images/tola1.jpg",
-        price: "118 EGP",
+        price: "118.00 EGP",
          
     },
     {
@@ -702,113 +701,97 @@ const productsData = [
         name: "Toffee Kids",
         category: "Baby Essentials",
         image: "images/toffee.jpg",
-        price: "77 EGP",
+        price: "77.00 EGP",
          
     },
 
   
 ];
-// Function to update cart count
-
-function updateCartCount() {
-const storedCart = JSON.parse(localStorage.getItem("cart")) || [];
-const cartCount = storedCart.length;
-document.querySelector("#cartItems").innerText = cartCount;
-}
-document.addEventListener("DOMContentLoaded", function() {
-updateCartCount();
-renderProducts(productsData);
-setupSearch();
-});
-
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
-// let addproduct = document.querySelector("#addproduct");
-// Function to render products
+
+document.addEventListener("DOMContentLoaded", function () {
+    renderProducts(productsData);
+    updateCartCount();
+    setupSearch();
+});
+
 function renderProducts(products) {
-const productsContainer = document.getElementById("products");
-productsContainer.innerHTML = "";
-products.forEach(product => {
-const productCard = `
-<div class="product" data-id="${product.id}" data-name="${product.name}" data-image="${product.image}" data-description="${product.description}" data-price="${product.price}">
-    <a href="" target="_blank"><img src="${product.image}" alt="${product.name}"></a>
-    <h3>${product.name}</h3>
-    <p class="price">${product.price}</p>
-    <button class="add-to-cart">Add to Cart</button>
-</div>`;
-productsContainer.innerHTML += productCard;
-});
-
-// Add event listener to "Add to Cart" buttons
-const addToCartButtons = document.querySelectorAll(".add-to-cart");
-addToCartButtons.forEach(button => {
-button.addEventListener("click", () => {
-    const productId = parseInt(button.parentNode.getAttribute("data-id"));
-    const selectedProduct = productsData.find(product => product.id === productId);
-    if (selectedProduct) {
-        button.textContent = "Added"; // Change button text to "Added"
-        // addproduct.innerHTML=localStorage.getItem("cart")
-        button.classList.add("added"); // Add 'added' class for styling
-        button.disabled = true; // Disable button after adding to cart
-        addToCart(selectedProduct); // Add selected product to cart
-        updateCartUI(); // Update UI to show product as added
-        saveCartToLocalStorage(); // Save updated cart to local storage
-        updateCartCount(); 
-        updateCartUI();
-         }
+    const productsContainer = document.getElementById("products");
+    productsContainer.innerHTML = "";
+    
+    const lastProducts = {};
+    products.forEach(product => {
+        lastProducts[product.category] = product;
     });
-      });
-   }
-function addToCart(product) {
-cart.push(product); // Add product to cart array
-updateCartCount();
-}
 
-
-// Load cart from localStorage when the page loads
-window.addEventListener('DOMContentLoaded', () => {
-loadCartFromLocalStorage();
-updateCartUI();
-});
-
-
-// Function to load cart from localStorage
-function loadCartFromLocalStorage() {
-const storedCart = localStorage.getItem("cart");
-if (storedCart) {
-cart = JSON.parse(storedCart);
+    products.forEach(product => {
+        const inCart = cart.some(cartProduct => cartProduct.id === product.id);
+        const isLastInCategory = lastProducts[product.category].id === product.id;
+        
+        const productCard = `
+        <div class="product" data-id="${product.id}" data-name="${product.name}" data-image="${product.image}" data-description="${product.description}" data-price="${product.price}">
+            <a href="#" target="_blank"><img src="${product.image}" alt="${product.name}"></a>
+            <h3>${product.name}</h3>
+            <p>${product.description}</p>
+            <p class="price">${product.price}</p>
+            <button class="add-to-cart ${isLastInCategory ? 'last-in-category' : ''}" data-id="${product.id}" ${inCart ? 'disabled class="added"' : ''}>${inCart ? 'Sold Out' : 'Add to Cart'}</button>
+        </div>`;
+        
+        productsContainer.innerHTML += productCard;
+    });
+    updateCartUI();
 }
-}
-
-// Function to update UI based on the items in the cart
-function updateCartUI() {
-const addToCartButtons = document.querySelectorAll(".add-to-cart");
-addToCartButtons.forEach(button => {
-const productId = parseInt(button.parentNode.getAttribute("data-id"));
-const inCart = cart.some(product => product.id === productId);
-if (inCart) {
-    button.textContent = "Added";
-    button.classList.add("added");
-    button.disabled = true;
-}
-}); 
-}
-function saveCartToLocalStorage() {
-localStorage.setItem("cart", JSON.stringify(cart)); // Save cart to local storage
-}
-console.log(localStorage.getItem('cart'))
-
-renderProducts(productsData);
 
 const categoryItems = document.querySelectorAll("#product-categories li");
 categoryItems.forEach(item => {
-item.addEventListener("click", () => {
-categoryItems.forEach(el => el.classList.remove("active"));
-item.classList.add("active");
-const category = item.getAttribute("data-filter");
-const filteredProducts = category === "all" ? productsData : productsData.filter(product => product.category === category);
-renderProducts(filteredProducts);
+    item.addEventListener("click", () => {
+        categoryItems.forEach(el => el.classList.remove("active"));
+        item.classList.add("active");
+        const category = item.getAttribute("data-filter");
+        const filteredProducts = category === "all" ? productsData : productsData.filter(product => product.category === category);
+        renderProducts(filteredProducts);
+    });
 });
-});
+
+function updateCartUI() {
+    const addToCartButtons = document.querySelectorAll(".add-to-cart");
+
+    addToCartButtons.forEach(button => {
+        const productId = parseInt(button.getAttribute("data-id"));
+        const inCart = cart.some(product => product.id === productId);
+
+        // Remove any existing event listeners
+        const newButton = button.cloneNode(true);
+        button.parentNode.replaceChild(newButton, button);
+
+        if (inCart) {
+            newButton.textContent = "Added";
+            newButton.classList.add("added");
+            newButton.disabled = true;
+        } else if (newButton.classList.contains("last-in-category")) {
+            newButton.addEventListener("click", function() {
+                newButton.textContent = "Sold Out";
+                newButton.classList.add("sold-out");
+                newButton.style.backgroundColor = "red";
+                newButton.disabled = true;
+            });
+        } else {
+            newButton.addEventListener("click", function() {
+                const product = productsData.find(product => product.id === productId);
+                if (!cart.some(cartProduct => cartProduct.id === productId)) {
+                    cart.push(product);
+                    localStorage.setItem("cart", JSON.stringify(cart));
+                    updateCartCount();
+                    updateCartUI();
+                }
+            });
+        }
+    });
+}
+
+function updateCartCount() {
+    document.getElementById("cart-count").textContent = cart.length;
+}
 
 function setupSearch() {
     const searchInput = document.getElementById("searchInput");
@@ -841,6 +824,8 @@ function renderSoldOutMessage() {
     const productsContainer = document.getElementById("products");
     productsContainer.innerHTML = "<p>Sold Out</p>";
 }
+
+
 
 
 
